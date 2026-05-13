@@ -1,0 +1,156 @@
+    /* Reset CSS */
+ 
+ * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html,
+    body {
+        height: 100%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    body {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    /* Navbar */
+
+    #navbar {
+        background-color: rgba(0, 0, 0, 0.7);
+        backdrop-filter: saturate(180%) blur(20px);
+        padding: 20px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    ul>li {
+        list-style-type: none;
+    }
+
+    ul>li>a {
+        color: rgba(255, 255, 255, 0.8);
+        text-decoration: none;
+    }
+
+    /* Section Historia */
+
+   .historia {
+        background-color: black;
+        background-size: 100px;
+   }
+
+    .title-historia {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        height: 70px;
+        position: relative;
+        top: 105px;
+
+        background-color: rgba(0, 0, 0, 0.1);
+        backdrop-filter: saturate(180%) blur(20px);
+    }
+    .btn-historia {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        height: 50px;
+        width: 200px;
+        color: rgba(255, 255, 255, 0.9);
+        position: relative;
+        top: 155px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        font-size: 12.5px;
+
+        border: 3px solid black;
+        border-radius: 10px;
+
+        background-color: rgba(0, 0, 0, 0.5);
+        backdrop-filter: saturate(180%) blur(20px);
+
+    }
+
+    .card-historia {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 440px;
+        height: 275px;
+        color: rgba(0, 0, 0, 0.8);
+        position: relative;
+        top: 210px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        font-size: 12.5px;
+        background-color: rgba(200, 200, 200, 0.9);
+        border-radius: 10px;
+        border: 0.05px solid black;
+    }
+
+    @media (max-width: 500px) {
+        
+        .btn-historia {
+            width: 120px;
+            height: 30px;
+            font-size: 8px;
+            top: 250px;
+        }
+
+        .card-historia {
+            width: 300px;
+            height: 230px;
+            font-size: 10px;
+            top: 220px;
+
+        }
+
+        .btn-historia {
+            width: 150px;
+            height: 40px;
+            font-size: 10px;
+            top: 300px;
+        }
+    }
+
+    /* Section Membros */
+
+    .btn-membros {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        height: 50px;
+        width: 210px;
+        color: rgba(255, 255, 255, 0.9);
+        position: relative;
+        top: 155px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        font-size: 12.5px;
+
+        border: 3px solid black;
+        border-radius: 10px;
+
+        background-color: rgba(0, 0, 0, 0.5);
+        backdrop-filter: saturate(180%) blur(20px);
+
+    }
