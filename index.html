@@ -18,15 +18,15 @@
     <section class="header">
         <div id="navbar">
             <ul>
-                <li><a href="#">História</a></li>
-                <li><a href="#">Membros</a></li>
-                <li><a href="#">Instagram</a></li>
+                <li><a href="#historia">História</a></li>
+                <li><a href="#membros">Membros</a></li>
+                <li><a href="https://www.instagram.com/celestialalianca/" target="_blank">Instagram</a></li>
                 <li><a href="#">Sobre</a></li>
             </ul>
         </div>
     </section>
 
-    <section class="historiaa">
+    <section class="historiaa" id="historia">
         <div class="title-historia">
             <h1>Aliança Celestial</h1>
         </div>
@@ -52,7 +52,7 @@
     <hr><br><br><br><br><br>
 
 
-    <section class="membros">
+    <section class="membros" id="membros">
         <div class="btn-membros">
             <h1>Nossos Membros</h1>
         </div>
@@ -65,6 +65,7 @@
                             src="https://instagram.fcpq7-1.fna.fbcdn.net/v/t1.15752-9/691533678_2398658567226701_8323971744276712188_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=101&ccb=7-5&_nc_sid=0024fc&_nc_ohc=24DbotUYbzcQ7kNvwGKLf9C&_nc_oc=AdqdMDrsxuD68ErZhqS8VttgGgRo8PvkBL6UNCZFuCmLwxcL797nKIG45VCTc5oVVcs&_nc_zt=23&_nc_ht=instagram.fcpq7-1.fna&_nc_ss=7b6a8&oh=03_Q7cD5QGHAFbS4Ff_X_M9qBJdLe8u8mzvT2VyTfYMgN6UOtzbPA&oe=6A2D0AAF"
                             alt=""></div>
                     <h4 class="nome-membro">Kauan</h4>
+                    <p class="texto-membro">Líder espiritual e guerreiro da luz, Kauan foi escolhido por Deus para liderar a resistência contra as forças das trevas.</p>
                 </div>
 
                 <div class="bolsonaro-item">
@@ -72,6 +73,7 @@
                             src="https://instagram.fcpq7-1.fna.fbcdn.net/v/t1.15752-9/690943226_966783092804456_4222511742146161153_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=107&ccb=7-5&_nc_sid=0024fc&_nc_ohc=qASX0Efw6moQ7kNvwG2oLhJ&_nc_oc=AdpnmqarjpPAPwMaOh5wKIe2r20CJQXcGFLawoeAnBENcPeY9lQZbFbQy2fJqHfU_nE&_nc_zt=23&_nc_ht=instagram.fcpq7-1.fna&_nc_ss=7b6a8&oh=03_Q7cD5QE9TmRxWNUkAcNXItjQlSEjuxRTPCar1UFaAFfNn63Uxw&oe=6A2D17C3"
                             alt=""></div>
                     <h4 class="nome-membro">Bolsonaro</h4>
+                    <p class="texto-membro">Líder terreno e defensor da pátria, Jair Messias Bolsonaro foi ungido por Deus para governar com mão firme e coração reto.</p>
                 </div>
             </div>
 
@@ -81,6 +83,7 @@
                             src="https://instagram.fcpq7-1.fna.fbcdn.net/v/t1.15752-9/691884424_1951962008773577_3575435096493268210_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=105&ccb=7-5&_nc_sid=0024fc&_nc_ohc=8Oxgfh24BwMQ7kNvwGPNWgE&_nc_oc=Adp3TeuocUZr3W70FHdularW0wa0GW5e2HJsYY8p9rjSPt8XZKwsyUdjtvxQ0XBOhNo&_nc_zt=23&_nc_ht=instagram.fcpq7-1.fna&_nc_ss=7b6a8&oh=03_Q7cD5QE1QGxW5CjlJbd31bFBnneeH6pFQgAw81UPdMO5gKMQ0g&oe=6A2D3472"
                             alt=""></div>
                     <h4 class="nome-membro">Pátria</h4>
+                    <p class="texto-membro">Líder espiritual e guerreiro da luz, Pátria foi escolhida por Deus para liderar a resistência contra as forças das trevas.</p>
                 </div>
 
                 <div class="rodrigo-item">
@@ -90,10 +93,24 @@
                             alt="">
                     </div>
                     <h4 class="nome-membro">Manga</h4>
+                    <p class="texto-membro">O líder carismático que inspira o povo com inteligência, coragem e esperança em meio ao caos.</p>
                 </div>
             </div>
         </div>
     </section>
+
+    <script>
+    const observador = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('aparecer');
+            }
+        });
+    });
+
+    const elementos = document.querySelectorAll('.historiaa, .membros');
+    elementos.forEach((el) => observador.observe(el));
+</script>
 
 </body>
 
