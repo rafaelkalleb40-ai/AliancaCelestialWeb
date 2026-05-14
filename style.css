@@ -1,6 +1,6 @@
     /* Reset CSS */
- 
- * {
+
+    * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
@@ -46,84 +46,100 @@
 
     /* Section Historia */
 
-   /* 1. Ajuste a Section para organizar os itens em coluna */
-.historiaa {
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 100px; /* Distância da navbar fixa */
-    padding-bottom: 50px;
-}
+    .historiaa {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 100px;
+        /* Distância da navbar fixa */
+        padding-bottom: 50px;
+    }
 
-/* 2. Remova o 'top' e 'position' de todos esses elementos */
-.title-historia {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 70px;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.05);
-    margin-bottom: 30px; /* Cria espaço natural */
-}
+    .title-historia {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70px;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.05);
+        margin-bottom: 30px;
+        /* Cria espaço natural */
+    }
 
-.btn-historia {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-    width: 200px;
-    color: white;
-    background-color: #808080;
-    border: 3px solid black;
-    border-radius: 10px;
-    margin-bottom: 20px; /* Garante que o card nunca suba nele */
-    font-size: 12.5px;
-    /* Removido position, top, left e transform */
-}
-
-.card-historia {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90%; /* Responsivo por natureza */
-    max-width: 440px;
-    min-height: 275px; /* Altura mínima, mas pode crescer se o texto for grande */
-    padding: 20px;
-    color: rgba(0, 0, 0, 0.8);
-    background-color: #cccccc;
-    border-radius: 10px;
-    border: 0.5px solid black;
-    font-size: 12.5px;
-    text-align: center;
-    /* Removido position, top, left e transform */
-}
-
-/* 3. Media Query muito mais simples */
-@media (max-width: 500px) {
     .btn-historia {
-        width: 160px;
-        height: 40px;
-        font-size: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        width: 200px;
+        color: white;
+        background-color: #808080;
+        border: 3px solid black;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        /* Garante que o card nunca suba nele */
+        font-size: 12.5px;
+        /* Removido position, top, left e transform */
     }
 
     .card-historia {
-        font-size: 11px;
-        padding: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        /* Responsivo por natureza */
+        max-width: 440px;
+        min-height: 275px;
+        /* Altura mínima, mas pode crescer se o texto for grande */
+        padding: 20px;
+        color: rgba(0, 0, 0, 0.8);
+        background-color: #cccccc;
+        border-radius: 10px;
+        border: 0.5px solid black;
+        font-size: 12.5px;
+        text-align: center;
+        /* Removido position, top, left e transform */
     }
-    .btn-membros {
-        width: 160px;
-        height: 40px;
-        font-size: 7px;
+
+    /* Media Queries */
+    @media (max-width: 500px) {
+        .btn-historia {
+            width: 160px;
+            height: 40px;
+            font-size: 10px;
+        }
+
+        .card-historia {
+            font-size: 11px;
+            padding: 15px;
+        }
+
+        .btn-membros {
+            width: 160px;
+            height: 40px;
+            font-size: 7px;
+        }
+
+        .membros-box,
+        .par-membros {
+            gap: 5vw;
+            flex-direction: row;
+        }
+
+        #membrosimg {
+            width: 120px;
+            height: 120px;
+        }
     }
-}
+
     /* Section Membros */
 
     .btn-membros {
         display: flex;
         justify-content: center;
         align-items: center;
-        
+
         height: 50px;
         width: 210px;
         color: rgba(255, 255, 255, 0.9);
@@ -143,29 +159,49 @@
     }
 
     #membrosimg {
-        width: 150px;
-        height: 150px;
+        width: 20vw;
+        max-width: 150px;
+        height: auto;
+        min-width: 80px;
+        aspect-ratio: 1 / 1;
         border-radius: 50%;
+        object-fit: cover;
     }
 
     .membros-box {
         display: flex;
         justify-content: center;
-        gap: 120px;
-        padding: 20px;
+        gap: 7.5vw;
+        padding: 10px;
         position: relative;
-        top: 70px;
+        top: 10px;
     }
 
     .par-membros {
         display: flex;
-        gap: 120px;
+        gap: 7.5vw;
     }
-    
+
     .box-membros {
         width: 60px;
         height: 60px;
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .membro-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .nome-membro {
+        font-size : 14px;
+        font-family: sans-serif;
+        text-align: center;
+        margin: 0;
+        position: relative;
+        top: 15px;
     }
